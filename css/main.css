@@ -10,7 +10,7 @@
     --primary-color1: rgb(244, 244, 244);
     --secondary-color1: black;
     --primary-color2: rgb(99, 63, 167);
-    --secondary-color2: rgb(255, 219, 57);
+    --secondary-color2: #71F0DA;
     --primary-color3: rgb(40, 25, 66);
     --secondary-color3: rgb(255, 246, 210);
     --primary-color4: rgb(70, 42, 119);
@@ -191,8 +191,8 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     height: 3.5rem;
     top: 0;
     justify-content: right;
-    background-color: rgb(24, 2, 62);
-    color: white;
+    background-color: rgb(12, 1, 31);
+    color: #71F0DA;
     z-index: 61;
 }
 
@@ -229,7 +229,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
 }
 
 #navbar-links a:hover {
-    color: rgb(255, 219, 57);
+    color: #71F0DA;
 }
 
 #navbar-links a::before {
@@ -237,7 +237,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     display: block;
     height: 5px;
     width: 0%;
-    background: rgb(255, 219, 57);
+    background: #71F0DA;
     top: 0;
     transition: all ease-in-out 250ms;
     position: absolute;
@@ -291,7 +291,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     top: 12px;
     left: 12px;
     font-size: 1.5rem;
-    color: rgb(255, 219, 57);
+    color: #71F0DA;
     font-family: 'Righteous','Mukta', sans-serif;
 }
 
