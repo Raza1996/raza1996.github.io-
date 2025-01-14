@@ -198,8 +198,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
 
 #contact-icons {    
     position: fixed;
-    top: 35%;
-    left: -1.6rem;
+    left: -1.7rem;
     z-index: 60;
 }
 
@@ -418,7 +417,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     width: 0;
     height: 0;
     border-radius: 50%;
-    transition: width 0.5s, height 0.5s;
+    transition: width -0.5s, height -0.5s;
 }
 
 .tough-titties::before {
@@ -1242,7 +1241,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 
 /* Hero Socials icons */
 .hero-icon1 img:hover , .hero-icon2 img:hover , .hero-icon3 img:hover {
-    transform: scale(1.2); 
+    transform: scale(0.9); 
     transition: all 0.2s ease-out;
 }
 
@@ -1259,15 +1258,15 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 }
 
 .hero-icon1 {
-    top: 0.5rem;
+    top: 2.4rem;
 }
 
 .hero-icon2 {
-    top: 10.5rem;
+    top: 12.4rem;
 }
 
 .hero-icon3 {
-    top: 5.5rem;
+    top: 7.4rem;
 }
 
 .grid-container {
