@@ -9,7 +9,7 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
   <script src="js/clicktocopy.js" defer></script>
-  <script src="js/carousel.js" defer></script>
+  <script src="js/carousel.js" defer></script> 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
@@ -17,6 +17,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
 </head>
  
 <body> 
@@ -32,13 +35,12 @@
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="#about-teleport">About</a></li>
+          <li class="swap1"><a id="index-about" href="#about-teleport">About</a></li>
           <li class="swap2"><a href="about-me.html">About</a></li>
-          <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
+          <li><a href="src/Resume.pdf" target="_blank" style="color: #71F0DA;">Resume</a></li>
         </ul>
       </div>
-      <img onclick="switchMode()" src="src/sun.png" width="20" height="20" alt="dark mode icon" class="mobile" id="darkmode">
-    </nav>
+      </nav>
 
     <div id="contact-icons">
 
@@ -53,7 +55,7 @@
           </div>
         </a>
         <div class="hero-icon1 h-i-common">
-          <a class="sweetalert2" onclick="copy(this)">
+          <a href="mailto:contact@goraza.ca" class="sweetalert2" onclick="copy(this)">
             <img src="src/Dark-Mail-Icon.png" width="200" height="200" alt="mail icon">
           </a>
       </div>
@@ -68,7 +70,7 @@
         <h1>TAVERN<br>BUDDIES</h1>
         <div class="screen-to-portable-1">
         <p>Check it out here:</p>
-          <a target="_blank" class="btn tavern-buddies" href="https://www.figma.com/proto/2NPCWP6RoxjqDHd0MHEVEj/Project-2%3A-Tavern-Buddies?page-id=229%3A523&node-id=271-934&viewport=270%2C634%2C0.3&scaling=min-zoom&starting-point-node-id=271%3A934&show-proto-sidebar=1"><span>PROTOTYPE</span></a>
+          <a style="z-index:100"  target="_blank" class="btn tavern-buddies" href="https://www.figma.com/proto/JldpqhDLBsF0odxBaz9F3X/Playground?page-id=0%3A1&node-id=751-1522&p=f&viewport=-1194%2C-5987%2C0.11&t=wGBHphy8jq44TdFk-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=751%3A1522&show-proto-sidebar=1"><span>PROTOTYPE</span></a>
         </div>
       </div>
     </div>
@@ -82,7 +84,7 @@
       justify-content: center;
       align-items: center;">
         <a target="_blank" class="screen-to-portable-2"
-          href="https://www.figma.com/proto/2NPCWP6RoxjqDHd0MHEVEj/Project-2%3A-Tavern-Buddies?page-id=229%3A523&node-id=271-934&viewport=270%2C634%2C0.3&scaling=min-zoom&starting-point-node-id=271%3A934&show-proto-sidebar=1">
+          href="https://www.figma.com/proto/JldpqhDLBsF0odxBaz9F3X/Playground?page-id=0%3A1&node-id=751-1522&p=f&viewport=-1194%2C-5987%2C0.11&t=wGBHphy8jq44TdFk-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=751%3A1522&show-proto-sidebar=1">
           <h3>PROTOTYPE</h3>
         </a>
       </div>
@@ -92,18 +94,16 @@
         <h4>Credits</h4>
         <p>Jason Tran, Naod Asaye, Raymond Chan</p>
         <h4>Role:</h4>
-        <p>Team Lead, Researcher, UX Writer, Interviewer, UI Designer, Visual
-          Designer, Graphic Designer</p>
+        <p>Team Lead, UX Researcher, UI Designer</p>
         <h4>Tools:</h4>
         <p>Figma, Discord</p>
         <h4>Duration:</h4>
         <p>6 weeks</p>
       </div>
       <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
-        <p>Tavern Buddies is a platform that connects Dungeon and Dragons (DnD) players in your area to create a
-          communal experience for similar enthusiasts. <br>Check it out the app in the <a
-            href="https://www.figma.com/proto/2NPCWP6RoxjqDHd0MHEVEj/Project-2%3A-Tavern-Buddies?page-id=229%3A523&node-id=271%3A934&viewport=270%2C634%2C0.3&scaling=min-zoom&starting-point-node-id=271%3A934&show-proto-sidebar=1"
-            target="_blank">App Demo</a>.</p>
+        <p>Behold! Dungeons & Dragons (DnD): A massively successful tabletop roleplaying game in the peak of its popularity. DnD is not only an intensely fun game, but proven to help socially anxious and nuero-atypical folk hone their people skills in a low stakes environment. However, more and more people choose to play DnD online especially after the pandemic. A game like this ought to be experienced in real life with real people. So the question is, how can we encourage DnD players to get together and play the game in real life?</p>
+        <p>Enter Tavern Buddies: a platform that connects DnD players in your area to create a
+          communal experience for local adventurers.</p>
       </div>
 
       <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
@@ -113,11 +113,12 @@
           developmental process), the team came across some pertinent conclusions:</p>
       </div>
       <div data-aos="fade-right" data-aos-delay="50" data-aos-once="true">
-        <img src="src/tavernbuddies/research1.png" alt="Research">
+        <img src="src/tavernbuddies/research1.svg" alt="Research">
         <figcaption style="margin-top: -1rem;">Figure.2a: DnD player preferences</figcaption>
       </div>
       <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
-        <img src="src/tavernbuddies/research2.png" alt="Research">
+        
+        <img src="src/tavernbuddies/research2.svg" alt="Research">
         <figcaption  style="margin-top: -2rem;">Figure.2b: DnD player demographics</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="50" data-aos-once="true">
@@ -151,6 +152,37 @@
           Before prototyping, artifacts that would represent the typical user base of the app were crafted. While not
           defintive, the team kept them in mind as the target demographic as we developed the features of the app.
         </p>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="50" class="slideshow-container" data-aos-once="true">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="src/tavernbuddies/Persona1.png" width="1200" height="900" alt="Storyboard">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="src/tavernbuddies/Persona2.png" width="1200" height="900" alt="Storyboard">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="src/tavernbuddies/Persona3.png" width="1200" height="900" alt="Storyboard">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+      <div class="breadcrumb-center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <figcaption style="margin-top: -2.8rem;">Figure.3a: Persona</figcaption>
+      </div>
+      <div  data-aos="fade-right" data-aos-delay="50" data-aos-once="true">
         <h2>Experience map</h2>
         <p>
           An experience map of one of the Persona characters was created in order to flesh out the user journey from
@@ -160,10 +192,8 @@
         <p>In addition, a user scenario was crafted to further flesh out the needs of a new user.</p>
       </div>
       <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2NPCWP6RoxjqDHd0MHEVEj%2FProject-2%253A-Tavern-Buddies%3Fnode-id%3D1274%253A3830"
-          allowfullscreen></iframe>
-        <figcaption>Figure.3: Applied UX Research Tools</figcaption>
+        <img src="src/tavernbuddies/JourneyMap.png" width="1200" height="900" alt="Journey Map">
+        <figcaption style="margin-top: -2rem;">Figure.3b: Applied UX Research Tools</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="50" data-aos-once="true">
         <h2>Greyscale Wireframe</h2>
@@ -176,10 +206,8 @@
             target="_blank">website</a>.</p>
       </div>
       <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2NPCWP6RoxjqDHd0MHEVEj%2FProject-2%253A-Tavern-Buddies%3Fnode-id%3D1367%253A3929"
-          allowfullscreen></iframe>
-        <figcaption style="margin-top: -0.5rem;">Figure.4: Greyscale Mockup</figcaption>
+        <img src="src/tavernbuddies/Greyscale.svg" width="1200" height="900" alt="greyscale">
+        <figcaption style="margin-top: -2rem;">Figure.4: Greyscale Mockup</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="50" data-aos-once="true">
         <h2>Visual Elements</h2>
@@ -190,8 +218,8 @@
           distinguished it from other apps.</p>
       </div>
       <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
-        <img src="src/tavernbuddies/visualbible.png" alt="tavern buddies visual bible">
-        <figcaption  style="margin-top: -2rem;">Figure.5: Color Bible</figcaption>
+        <img src="src/tavernbuddies/visualbible.svg" alt="tavern buddies visual bible">
+        <figcaption  style="margin-top: -1.8rem;">Figure.5: Color Bible</figcaption>
       </div>
       <div data-aos="fade-right" data-aos-delay="50" data-aos-once="true">
         <h2>Refinement</h2>
@@ -201,14 +229,17 @@
           that they had more contrast with the typeface's color. In addition, map visuals were updated to a darker
           pallete so that users wouldn't get whiplash from the the screen changing to a brighter screen color after
           accessing the map feature.</p>
+          <p>Check out the <a
+          href="https://www.sfu.ca/siat/student_projects/iat339_2022_summer/mht6/projects/IAT334-TavernBuddies/index.html"
+          target="_blank">prototype</a>.</p>
       </div>
 
-      <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F2NPCWP6RoxjqDHd0MHEVEj%2FProject-2%253A-Tavern-Buddies%3Fnode-id%3D229%253A523"
-          allowfullscreen></iframe>
-
-        <figcaption style="margin-top: -0.5rem;" >Figure.6: Refined Prototype</figcaption>
+      <div sdata-aos="fade-left" data-aos-delay="50" data-aos-once="true">
+        <div style="display: flex;justify-content: center;align-items: center; ">
+          <img style="height: 500px" src="src/tavernbuddies/gif1.gif" alt="tavern buddies gif1">
+          <img style="height: 500px" src="src/tavernbuddies/gif2.gif" alt="tavern buddies gif2">
+        </div>
+        <figcaption style="margin-top: -0.1rem;" >Figure.6: Refined Prototype</figcaption>
       </div>
 
       <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
@@ -218,80 +249,83 @@
           for future considerations, the team wanted to add an onboarding feature, but decided against it to avoid
           feature bloat. The team also considered scaling back on social features like group creation, letting people
           simply use their social media platforms of choice to figure out how they would play together.</p>
+          
       </div>
     </div>
     <div class="emptybox2">
     </div>
   </div>
 
-  <div id="projects" class="content-grid" style="background-color: transparent;">
-    <!--Top Page Button-->
-    <div class="emptybox1"></div>
-    <h1 class="heading" style="margin-bottom: 2rem;">ALSO CHECK OUT</h1>
-    <div class="emptybox2"></div>
+  <div  class="content-grid" style="background-color: transparent;">
     <!--Cards-->
+    
     <div class="emptybox1"></div>
-    <div id="card-content" style="margin-bottom: 2rem;">
+    <h2 style="background-color: transparent; padding-top: 2rem;" id="projects">Projects</h2>
+    <div class="emptybox2"></div>
 
-      <a class="card-margin" href="tough-titties.html" style="pointer-events:all;">
-        <div class="project-card hoverHither" data-aos="fade-up" data-aos-once="true">
-          <div class="containerA">
-            <h1 style="color: rgb(255, 228, 253)">EMMA HANDS'S SHOP</h1>
-            <p style="color: rgb(125, 53, 124)">Redesigning a brand focusing on breast cancer awareness. This website became a finalist at the Eunoia UX Hackathon.</p>
-            <h2 style="background:rgb(117, 56, 103); color:rgb(245, 245, 245)">View Case
-              Studies</h2>
-            
+    <div class="emptybox1"></div>
+      <div id="checkerboard">
+        <a href="amvets.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 20%; text-decoration: underline;">AMVETS</p>
+            <p>Designed the checkout for a veteran charity's donation page</p>
           </div>
-          <div class="containerB"></div> 
-          <div class="screen-to-portable-1">
-            <img src="src/tough-titties/tt-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+          <img  style="height: 100%; width: 75%; margin-top: -40%;" src="src/AMVETS-Icon.png">
+        </a>
+        <a href="chamber-of-commerce.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 10%; text-decoration: underline;">Ridge Meadows<br>Chamber of Commerce</p>
+            <p>Redesigned the website and prototyped the map feature</p>
           </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-tough-titties.png" alt="Vancouver Tool Library Tile">
+          <img  style="height: 90%; width: 70%; margin-top: -50%;" src="src/RM-Icon.png">
+        </a>
+        <a href="cybersnake-x.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 15%; text-decoration: underline;">CybersnakeX</p>
+            <p>Designed UI elements as well as participated in UX for combat system</p>
           </div>
-        </div>
-      </a>
-
-      <a class="card-margin" href="vancouver-tool-library.html" style="pointer-events:all;">
-        <div class="project-card hoverHither" data-aos="fade-up" data-aos-once="true">
-          <div class="containerA">
-            <h1 style="color: rgb(255, 255, 255);">VANCOUVER TOOL LIBRARY</h1>
-            <p style="color: rgb(119, 102, 24);">Redesigning website and improving self-checkout to reduce work load on
-              staff.</p>
-            <h2 style="background:rgb(119, 102, 24); color:rgb(245, 245, 245);">View Case
-              Studies</h2>
+          <img style="height: 100%; width: 75%; margin-top: -50%;"  src="src/CS-Icon.svg">
+        </a>    
+        <a href="gotchi-project.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 10%; text-decoration: underline;">Gotchi</p>
+            <p>A speculative UX project with the purpose of helping users
+              manage electronic waste via a cute accessory</p> 
           </div>
-          <div class="containerB"></div> 
-          <div class="screen-to-portable-1">
-            <img src="src/vtl/vtl-screen-card.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
-            
+          <img  style="height: 70%; margin-top: -10%;" src="src/Gotchi-Icon.svg">
+        </a>      
+        <a href="vancouver-tool-library.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 17%; text-decoration: underline;">Vancouver Tool Library</p>
+            <p>Redesigning website and improving self-checkout to reduce work load on
+              staff</p>
           </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-vancouver-tool-library.svg" alt="Vancouver Tool Library Tile">
+          <img  style="height: 100%; width: 80%; margin-top: -50%;" src="src/VTL-Icon.png">
+        </a>
+        <a href="fallenlondon.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 15%; text-decoration: underline;">Fallen London</p>
+            <p>Social media integration for the roleplaying game Fallen London</p>
           </div>
-        </div>
-      </a>
-
-      <a class="card-margin" href="gotchi-project.html" style="pointer-events:all;">
-        <div class="project-card aos-init" data-aos="fade-up" data-aos-once="true">
-          <div class="containerA"></div>
-          <div class="containerB">
-            <h1 class="gotchi-h1" style="color: rgb(255, 255, 255)">GOTCHI</h1>
-            <p style="color: rgb(83, 83, 83)">A speculative UX project with the purpose of helping users
-              manage electronic waste via a cute computer accessory.</p>
-            <h2 style="background:rgb(255, 101, 163); color:rgb(255, 255, 255)">View
-              Case Study</h2>
-            </div>
-          <div class="screen-to-portable-1">
-            <img src="src/gotchi/gotchi-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
+          <img style="height: 150%; width: 65%; margin-top: -30%;" src="src/FL-Icon.svg">
+        </a>
+        <a href="tough-titties.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 15%; text-decoration: underline;">Tough Titties</p>
+            <p>An award-winning redesign for a breast cancer awareness brand</p>
           </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-gotchi.svg" alt="Gotchi Tile">
-          </div>
-        </div>
-      </a>
-
-    </div> 
+          <img style="height: 75%; margin-top: 10%"  src="src/TT-Icon.svg">
+        </a>
+        <!-- Add more links as needed -->
+    </div>
+    <div class="emptybox2"></div>
   </div>
 
 
@@ -315,7 +349,7 @@
         </div>
         <div id="day-contact-footer" class="hidden">
           <img class="icon sweetalert2" src="src/Day-Mail-Icon.png" onclick="copy(this)" width="20" height="20" alt="mail icon">
-          <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
+          <a href="mailto:contact@goraza.ca" class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
           <a  href="https://www.instagram.com/trace.raza/">
             <img class="icon" src="src/Day-Insta-Icon.png" width="20" height="20" alt="intstagram icon">
           </a>
@@ -347,6 +381,7 @@
   <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/hitherTither.js"></script>
+  <script src="js/about-teleport.js"></script>
   <script src="js/loader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
   </body>

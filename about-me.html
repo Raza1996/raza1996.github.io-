@@ -9,7 +9,7 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
   <script src="js/clicktocopy.js" defer></script>
-  <script src="js/carousel.js" defer></script>
+  <script src="js/carousel.js" defer></script> 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
@@ -17,6 +17,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
 </head>
  
 
@@ -32,7 +35,7 @@
           <li class="swap2"><a href="index.html">Projects</a></li>
           <li class="swap1"><a href="#about-teleport">About</a></li>
           <li class="swap2"><a href="about-me.html">About</a></li>
-          <li><a href="src/Resume.pdf" target="_blank" style="color: var(--primary-color2);">Resume</a></li>
+          <li><a href="src/Resume.pdf" target="_blank" style="color: #71F0DA;">Resume</a></li>
         </ul>
       </div>
     </nav>
@@ -42,25 +45,30 @@
   <div class="content-grid" style="background-color:transparent;">
     <!--For aligning content in the middle of the screen-->
     <div class="emptybox1"></div>
-    <div class="mobile-about-content">
-      <img src="src/portfolio-portrait.jpg" 
-      alt="A suave looking fellow in a suit." width="500" height="500" data-aos="fade-up" data-aos-once="true">
-    
-      <div class="about-text" id="about" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-        <h2 style="display: inline;">Hi, I'm </h2>
-        <h2 style="display: inline; font-family: Righteous;">RAZA</h2>
-        <h2 style="display: inline;">!✌</h2>
-        <p>I'm a UX Designer & Media Artist. I currently work as a freelance visual and brand designer.</p>
-        <p>For me, the satisfaction of UX design lies in crafting elegant and
-          <b>inclusive</b> design solutions that encourage frictionless user interaction. It is my priority to understand and empathize with client wants and needs 
-          in every step of the design process to produce a truly <b>user-centered</b>
-          product.
-        </p>
-        <p>I spend my leisure hours honing my various crafts and spending time
-          with friends in <b>Vancouver</b>.</p>
-        <p style="display: inline;">Let's <a
-          class="sweetalert2" onclick="copy(this)">get in touch!</a></p>
-        <h2 style="display: inline;">🤙</h2>
+    <div class="about-content">
+      <div id="hero">
+        <div id="blackhole">
+          <img id="b1" src="src/Avatar/Blackhole 1.png" alt="Banner Image Element">
+          <img id="b2" src="src/Avatar/Blackhole 2.png" alt="Banner Image Element">
+          <img id="b3" src="src/Avatar/Blackhole 3.png" alt="Banner Image Element">
+        </div>
+        <div>
+          <img style="margin-bottom: 10rem;" id="a_body" src="src/Avatar/Body.png" alt="Banner Image Element">
+          <img id="s1" src="src/Avatar/Screen 1.png" alt="Banner Image Element">
+          <img id="s2" src="src/Avatar/Screen 2.png" alt="Banner Image Element">
+          <img id="s3" src="src/Avatar/Screen 3.png" alt="Banner Image Element">
+        </div>
+      </div>
+      
+      <div id="introPara" style="margin-bottom: 5rem;">
+            <h2 style="display: inline;">Hi, I&rsquo;m </h2>
+            <h2 style="display: inline; font-family: Righteous;">RAZA</h2>
+            <h2 style="display: inline;">! 😎</h2>
+            <p>I&rsquo;m a UX Designer & Multimedia Media Artist. Progress brings us new and exciting products, services, and technology everyday. Through a user-centered approach and an impetus towards inclusivity, design can bridge the gap between people and innovation.</p>
+
+            <p style="display: inline;">Let&rsquo;s 
+              <a class="sweetalert2" onclick="copy(this)">get in touch!</a></p>
+            <h2 style="display: inline;">🤙</h2>
       </div>
     </div>
     <div class="emptybox2"></div>

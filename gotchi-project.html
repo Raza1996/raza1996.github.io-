@@ -9,7 +9,7 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
   <script src="js/clicktocopy.js" defer></script>
-  <script src="js/carousel.js" defer></script>
+  <script src="js/carousel.js" defer></script> 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
@@ -17,6 +17,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
 </head>
  
 <body> 
@@ -32,33 +35,15 @@
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="#about-teleport">About</a></li>
+          <li class="swap1"><a href="#about-teleport" id="index-about">About</a></li>
           <li class="swap2"><a href="about-me.html">About</a></li>
-          <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
+          <li><a href="src/Resume.pdf" target="_blank" style="color: #71F0DA;">Resume</a></li>
         </ul>
       </div>
-      <img onclick="switchMode()" src="src/sun.png" width="20" height="20" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
 
     <div id="contact-icons">
 
-      <div id = "day-contact-icon">
-        <div class="hero-icon2 h-i-common">
-          <a target="_blank" href="https://www.instagram.com/trace.raza">
-            <img src="src/Day-Insta-Icon.png" width="200" height="200" alt="instagram icon">
-          </a>
-        </div>
-        <a target="_blank" href="https://www.linkedin.com/in/goraza/">
-          <div class="hero-icon3 h-i-common">  
-              <img src="src/Day-Linkedin-Icon.png" width="200" height="200" alt="linkedin icon">
-          </div>
-        </a>
-        <div class="hero-icon1 h-i-common">
-          <a class="sweetalert2" onclick="copy(this)">
-            <img src="src/Day-Mail-Icon.png" width="200" height="200" alt="mail icon">
-          </a>
-        </div>
-      </div>
 
       <div id = "dark-contact-icon">
         <div class="hero-icon2 h-i-common">
@@ -72,7 +57,7 @@
           </div>
         </a>
         <div class="hero-icon1 h-i-common">
-          <a class="sweetalert2" onclick="copy(this)">
+          <a href="mailto:contact@goraza.ca" class="sweetalert2" onclick="copy(this)">
             <img src="src/Dark-Mail-Icon.png" width="200" height="200" alt="mail icon">
           </a>
         </div>
@@ -121,7 +106,7 @@
         </a>
         
       </div>
-      <div data-aos="fade-left" data-aos-delay="50" class="span-content" data-aos-once="true">
+      <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
         <h2>IDEATION</h2>
         <p>My team and I began the preliminary design stage on the online platform Figma. We wanted to create a design
           that tackled themes of consumption and waste. This topic branched out into conversations regarding the
@@ -130,10 +115,8 @@
           design. I pitched the idea of combining it with a smart trashcan idea that we ideated over previously. This
           was where the idea of Gotchi originated.</p>
       </div>
-      <div data-aos="fade-left" data-aos-delay="50"  class="span-content" data-aos-once="true">
-        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width:100%;" width="550" height="450"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5Yq4YEGWnuMxyOEJdrkKHD%2FTEAM-B-Ludic-Design-Mini-Project%3Fnode-id%3D0%253A1"
-          allowfullscreen></iframe>
+      <div data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
+        <img src="src/gotchi/figma-board.png" alt="moodboard" width="843" height="785">
       </div>
       <div data-aos="fade-right" data-aos-delay="100" data-aos-once="true">
         <h2>MOODBOARD</h2>
@@ -207,75 +190,76 @@
     </div>
   </div>
 
-  <div id="projects" class="content-grid" style="background-color: transparent;">
-    <!--Top Page Button-->
-    <div class="emptybox1"></div>
-    <h1 class="heading" style="margin-bottom: 2rem;">ALSO CHECK OUT</h1>
-    <div class="emptybox2">
-    </div>
+  <div  class="content-grid" style="background-color: transparent;">
     <!--Cards-->
+    
     <div class="emptybox1"></div>
-    <div id="card-content" style="margin-bottom: 2rem;">
+    <h2 style="background-color: transparent; padding-top: 2rem;" id="projects">Projects</h2>
+    <div class="emptybox2"></div>
 
-      <a class="card-margin" href="tough-titties.html" style="pointer-events:all;">
-        <div class="project-card hoverHither" data-aos="fade-up" data-aos-once="true">
-          <div class="containerA">
-            <h1 style="color: rgb(255, 228, 253)">EMMA HANDS'S SHOP</h1>
-            <p style="color: rgb(125, 53, 124)">Redesigning a brand focusing on breast cancer awareness. This website became a finalist at the Eunoia UX Hackathon.</p>
-            <h2 style="background:rgb(117, 56, 103); color:rgb(245, 245, 245)">View Case
-              Studies</h2>
+    <div class="emptybox1"></div>
+      <div id="checkerboard">
+        <a href="amvets.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 20%; text-decoration: underline;">AMVETS</p>
+            <p>Designed the checkout for a veteran charity's donation page</p>
           </div>
-          <div class="containerB"></div> 
-          <div class="screen-to-portable-1">
-            <img src="src/tough-titties/tt-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
-            
+          <img  style="height: 100%; width: 75%; margin-top: -40%;" src="src/AMVETS-Icon.png">
+        </a>
+        <a href="chamber-of-commerce.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 10%; text-decoration: underline;">Ridge Meadows<br>Chamber of Commerce</p>
+            <p>Redesigned the website and prototyped the map feature</p>
           </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-tough-titties.png" alt="Vancouver Tool Library Tile">
+          <img  style="height: 90%; width: 70%; margin-top: -50%;" src="src/RM-Icon.png">
+        </a>
+        <a href="cybersnake-x.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 15%; text-decoration: underline;">CybersnakeX</p>
+            <p>Designed UI elements as well as participated in UX for combat system</p>
           </div>
-        </div>
-      </a>
-
-      <a class="card-margin" href="tavern-buddies.html" style="pointer-events:all;">
-        <div class="project-card hoverHither" data-aos="fade-up" data-aos-once="true">
-          <div class="containerA"></div>
-          <div class="containerB">              
-            <h1 style="color: rgb(255, 203, 203);">TAVERN BUDDIES</h1>
-            <p style="color: rgb(255, 255, 255);">A mobile app that connects Dungeon and Dragons (DnD) players in your area.</p>
-            <h2 style="background:rgb(39, 13, 13); color:rgb(245, 245, 245);">View Case
-              Studies</h2>
-            </div> 
-          <div class="screen-to-portable-1">
-            <img src="src/tavernbuddies/tb-tile.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
-            
+          <img style="height: 100%; width: 75%; margin-top: -50%;"  src="src/CS-Icon.svg">
+        </a>
+        <a  href="tavern-buddies.html" class="square-block ">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 15%; text-decoration: underline;">Tavern Buddies</p>
+            <p>Directed the creation of a mobile app that connected Dungeons & Dragon players</p>
+            </div>
+          <img style="height: 100%; width: 105%; margin-top: -30%;"  src="src/TB-Icon.png">
+          
+        </a>           
+        <a href="vancouver-tool-library.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 17%; text-decoration: underline;">Vancouver Tool Library</p>
+            <p>Redesigning website and improving self-checkout to reduce work load on
+              staff</p>
           </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-tavern-buddy.svg" alt="Vancouver Tool Library Tile">
+          <img  style="height: 100%; width: 80%; margin-top: -50%;" src="src/VTL-Icon.png">
+        </a>
+        <a href="fallenlondon.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 15%; text-decoration: underline;">Fallen London</p>
+            <p>Social media integration for the roleplaying game Fallen London</p>
           </div>
-        </div>
-      </a>
-
-      <a class="card-margin" href="vancouver-tool-library.html" style="pointer-events:all;">
-        <div class="project-card hoverHither" data-aos="fade-up" data-aos-once="true">
-          <div class="containerA">
-            <h1 style="color: rgb(255, 255, 255);">VANCOUVER TOOL LIBRARY</h1>
-            <p style="color: rgb(119, 102, 24);">Redesigning website and improving self-checkout to reduce work load on
-              staff.</p>
-            <h2 style="background:rgb(119, 102, 24); color:rgb(245, 245, 245);">View Case
-              Studies</h2>
+          <img style="height: 150%; width: 65%; margin-top: -30%;" src="src/FL-Icon.svg">
+        </a>
+        <a href="tough-titties.html" class="square-block">
+          <div class="crossHairProblemSolver"></div>
+          <div class="hologram">
+            <p style="margin-top: 15%; text-decoration: underline;">Tough Titties</p>
+            <p>An award-winning redesign for a breast cancer awareness brand</p>
           </div>
-          <div class="containerB"></div> 
-          <div class="screen-to-portable-1">
-            <img src="src/vtl/vtl-screen-card.png" width="7882" height="2425" style="width: 100%; height: 100%; margin-bottom: -11px;">
-            
-          </div>
-          <div class="screen-to-portable-2">
-            <img src="src/mobile-card-vancouver-tool-library.svg" alt="Vancouver Tool Library Tile">
-          </div>
-        </div>
-      </a>
-
+          <img style="height: 75%; margin-top: 10%"  src="src/TT-Icon.svg">
+        </a>
+        <!-- Add more links as needed -->
     </div>
+    <div class="emptybox2"></div>
   </div>
 
 
@@ -286,7 +270,7 @@
         <h4>Contact</h4>
         <div id="dark-contact-footer">
           <img class="icon sweetalert2" src="src/Dark-Mail-Icon.png" onclick="copy(this)" width="20" height="20" alt="mail icon">
-          <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
+          <a href="mailto:contact@goraza.ca" class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
           <a  href="https://www.instagram.com/trace.raza/">
             <img class="icon"  src="src/Dark-Insta-Icon.png" width="20" height="20" alt="intstagram icon">
           </a>
@@ -298,7 +282,7 @@
         </div>
         <div id="day-contact-footer" class="hidden">
           <img class="icon sweetalert2" src="src/Day-Mail-Icon.png" onclick="copy(this)" width="20" height="20" alt="mail icon">
-          <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
+          <a href="mailto:contact@goraza.ca" class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
           <a  href="https://www.instagram.com/trace.raza/">
             <img class="icon" src="src/Day-Insta-Icon.png" width="20" height="20" alt="intstagram icon">
           </a>
@@ -330,6 +314,7 @@
   <script src="js/darkModeIconSwitch.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/hitherTither.js"></script>
+  <script src="js/about-teleport.js"></script>
   <script src="js/loader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
   </body>

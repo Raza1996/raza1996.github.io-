@@ -11,7 +11,7 @@
     --secondary-color1: black;
     --primary-color2: rgb(99, 63, 167);
     --secondary-color2: #71F0DA;
-    --primary-color3: rgb(40, 25, 66);
+    --primary-color3: rgb(8, 6, 80);
     --secondary-color3: rgb(255, 246, 210);
     --primary-color4: rgb(70, 42, 119);
     --secondary-color4: rgb(255, 242, 189);
@@ -22,14 +22,13 @@
     --primary-color7: rgb(99, 63, 167);
     --secondary-color7: #FF8DDF;
     --primary-color8: rgb(84, 54, 139);
-    --secondary-color8: white;;
-
+    --secondary-color8: white;
 }
 
 :root {
-    --primary-color1: #050b13;
+    --primary-color1: #021228;
     --secondary-color1: white;
-    --primary-color2: rgb(255, 219, 57);
+    --primary-color2: rgb(228, 188, 10);
     --secondary-color2: rgb(99, 63, 167);
     --primary-color3: rgb(255, 249, 225);
     --secondary-color3: rgb(40, 25, 66);
@@ -42,7 +41,7 @@
     --primary-color7: #71F0DA;
     --secondary-color7: rgb(255, 219, 57);
     --primary-color8: #71F0DA;
-    --secondary-color8: #0B1623;
+    --secondary-color8: #052042;
 }
 
 #darkmode {
@@ -53,36 +52,260 @@
     margin-top: 1.1rem;
 }
 
+/*Hero*/
+#a_bg{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#about_content {
+    display: grid;
+}
+
+#a_body {
+    width: 80%;  /* 40% of the viewport width */
+    height: auto; /* 40% of the viewport height */
+    top: auto; 
+    top: 50%;
+}
+
+@keyframes rotateClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateCounterClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+#hero:hover #b1 {
+    animation: rotateCounterClockwise 2s linear infinite; /* Rotate counter-clockwise on hover */
+}
+
+#hero:hover #b2 {
+    animation: rotateClockwise s linear infinite; /* Rotate counter-clockwise on hover */
+}
+
+#hero:hover #b3{
+    animation: rotateCounterClockwise 2s linear infinite;
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px); /* Adjust the value as needed */
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100px); /* Adjust the value as needed */
+    }
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50px); /* Adjust the value as needed */
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50px); /* Adjust the value as needed */
+    }
+}
+
+@keyframes hMoveLeft {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0); /* Adjust the value as needed */
+    }
+}
+
+
+@keyframes hMoveRight {
+    from {
+        transform: translateX(50px);
+    }
+    to {
+        transform: translateX(0); /* Adjust the value as needed */
+    }
+}
+
+#hero:hover #s1{
+    animation: moveDown 2s ease-in-out 1 forwards;
+}
+
+#hero:hover #s2{
+    animation: hMoveRight 2s ease-in-out 1 forwards;
+}
+
+#hero:hover #s3{
+    animation: moveUp 2s ease-in-out 1 forwards;
+}
+
+#s1 { 
+    position: absolute;
+    top: 20%;    /* Move down 10% from its parent div */
+    left: 83%;
+    width: 10%;
+    height: auto;
+    animation: moveUp 2s ease-in-out 1 forwards; /* Move up animation, play once */
+}
+
+#s2 { 
+    position: absolute;
+    top: 60%;    /* Move down 10% from its parent div */
+    left: 60.5%;
+    width: 25%;
+    height: auto;
+    animation: moveRight 2s ease-in-out 1 forwards; 
+}
+
+#s3 { 
+    position: absolute;
+    top: 20%;    /* Move down 10% from its parent div */
+    left: 0%;
+    width: 20%;
+    height: auto;
+    animation:  moveDown 2s ease-in-out 1 forwards;
+}
+
+#b1 {
+    position: absolute;
+    top: 4%;    /* Move down 10% from its parent div */
+    left: 38.3%;
+    width: 17%;
+    height: auto;
+    border: none;
+    z-index: -1;
+    animation: rotateClockwise 2s linear infinite; /* Rotate clockwise */
+}
+
+#b2 {
+    position: absolute;
+    top: 5.5%;    /* Move down 10% from its parent div */
+    left: 39.1%;
+    width: 15%;
+    height: auto;
+    border: none;
+    z-index: -1;
+    animation: rotateCounterClockwise 5s linear infinite; /* Rotate clockwise */
+}
+
+#b3 {
+    position: absolute;
+    top: 0.7%;    /* Move down 10% from its parent div */
+    left: 35.6%;
+    width: 22%;
+    height: auto;
+    border: none;
+    z-index: -1;
+    animation: rotateClockwise 10s linear infinite; /* Rotate clockwise */
+}
+
+#hero {
+    top: 7rem;  
+    left: 12%;
+    position: relative;
+    width: 50%;
+}
+
+.hero h1{   
+    font-size: 3.5rem;
+    line-height: 4rem;
+    color: var(--primary-color6);
+}
+
+.hero .text {
+    position: absolute;
+    top: 15vh;
+    left: 20vh;
+}
+
+.hero p {
+    padding-top: 3rem; 
+    padding-bottom: 0.5rem;
+}
+
+.hero a {
+    background-color: var(--primary-color8);
+    color: var(--secondary-color8);
+}
+
+
 .hidden {
     display: none;
 }
 
 body {
     position: relative;
-    font-family: 'Lato', sans-serif;
-    font-weight: medium;
+    font-family: "Saira Condensed", serif;
+    font-weight: 100;
     background: var(--primary-color1);
     color: var(--secondary-color1);
-    line-height: 2rem;
-    
-    font-size: large;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+}
+
+
+#introPara {
+    position: absolute;
+    width: 40%;
+    padding-top: 19%;
+    padding-right: 5%;
+    left: 60%;
+    z-index: 3;
 }
 
 nav a { 
-    font-family: 'Mukta', sans-serif;
+    font-family: "Saira Condensed", serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 h1 {
-    font-family: 'Mukta', sans-serif;
     color: var(--primary-color2);
     line-height: 2rem;
     padding-top: 2rem;
-    letter-spacing: 1px;
+    letter-spacing: 1px;        
+    font-family: "Saira Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10rem;
 }
 
 h2 {
-    font-family: 'Mukta', sans-serif;
-    font-size: large;
+    font-family: "Saira Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--primary-color2);
+    font-size: 2.5rem;
 }
 
 .mobile h2 {
@@ -176,7 +399,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp*/
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(40, 25, 66);
+    background-color: #71F0DA;
 }
 
 ::-webkit-scrollbar-track {
@@ -194,6 +417,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     background-color: rgb(0, 0, 0);
     color: #71F0DA;
     z-index: 61;
+    opacity: 0.9;
 }
 
 #contact-icons {    
@@ -222,13 +446,9 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     text-decoration: none;
     color: white;
     padding: 1rem;
-    padding-top: 0.7em;
+    padding-top: 0.4em;
     padding-bottom: 0.5rem;
     display: block;
-}
-
-#navbar-links a:hover {
-    color: #71F0DA;
 }
 
 #navbar-links a::before {
@@ -287,7 +507,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
 
 .brand-title {
     position: absolute;
-    top: 12px;
+    top: 7px;
     left: 12px;
     font-size: 1.5rem;
     color: #71F0DA;
@@ -296,7 +516,7 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
 
 .brand-title:hover {
     transition: all 0.5s ease-out;
-    color: white;
+    color: rgb(255, 219, 57);
 }
 
 
@@ -322,20 +542,13 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
 }
 
 .banner-text h1 {
-    font-family: 'Righteous','Mukta', sans-serif;
+    font-family: "Saira Condensed", serif;
     margin-top: 8rem;
-    font-size: 10rem;
     margin-bottom: 3rem;
     letter-spacing: 1rem;
     color: var(--primary-color3);
 }
 
-.banner-text h2 {
-    font-family: 'Mukta', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 16px;
-    margin-top: 15px;
-}
 
 .banner-text h4 {
     font-weight: bold;
@@ -351,42 +564,6 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     z-index: 1;
 }
 
-
-/*Hero*/
-.hero {
-    align-items: center;
-    justify-content: center;
-}
-
-.hero img{
-    position: relative;
-    width: 100%;
-    left: 0;
-    right: 0;
-}
-
-.hero h1{   
-    font-size: 3.5rem;
-    line-height: 4rem;
-    color: var(--primary-color6);
-}
-
-.hero .text {
-    position: absolute;
-    top: 15vh;
-    left: 20vh;
-}
-
-.hero p {
-    padding-top: 3rem; 
-    padding-bottom: 0.5rem;
-}
-
-.hero a {
-    background-color: var(--primary-color8);
-    color: var(--secondary-color8);
-}
-
 /*Button Animation*/
 .btn {
     position: relative;
@@ -396,11 +573,10 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     color:#fff;
     overflow: hidden; 
     z-index: 1;
-    border-radius: 0.5rem;  
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 1px;
     font-size: 1.5rem;
-    font-family: 'Mukta', sans-serif;
+    font-family: "Saira Condensed", serif;
 }
 
 .btn span {
@@ -420,6 +596,11 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     transition: width -0.5s, height -0.5s;
 }
 
+.btn:hover {
+    transform: scale(0.9); 
+    transition: all 0.2s ease-out;
+}
+
 .tough-titties::before {
     background: #F0B2E6;
 }
@@ -428,8 +609,27 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     background: #620000;
 }
 
+.fallen-london::before {
+    background: #42686B;
+} 
+
 .vancouver-tool-library::before {
-    background: #F6D854;
+    background: #ffd000;
+}
+
+.cybersnakeX::before {
+    background: #f66754;
+
+}
+
+.amvets::before {
+    background: #ab0000;
+
+}
+
+.chamber:before {
+    background: #00cb4e;
+
 }
 
 .btn:hover::before {
@@ -441,12 +641,118 @@ https://www.youtube.com/watch?v=At4B7A4GOPg&t=39s&ab_channel=WebDevSimplified*/
     color:#fff;
 }
 
+.hero .text{
+    padding-left: 7.5%;
+}
+
 /*Card styling learned from 
 https://www.w3schools.com/howto/howto_css_cards.asp*/
+#checkerboard {
+    display: grid;
+    margin-top: 1rem;
+    gap: 10px; 
+}
+
+.square-block {
+    position: relative;
+    text-decoration: none;
+    display: grid;
+    place-items: center; 
+    width: 100%; /* Ensure the block fills the column width */
+    aspect-ratio: 1 / 1;
+    overflow: hidden; /* Ensure the content doesn't overflow */
+    transition: transform 0.3s ease;   
+}
+
+.hologram {
+    position: absolute;
+    width: 100%; /* Set the width of the square */
+    height: 100%; 
+    opacity: 0;
+    background: #71F0DA;
+    z-index: 3;
+}
+
+.square-block img {
+    opacity: 1;
+    z-index: 1;
+}
+
+.square-block p {
+    text-align: center; /* Center text inside the paragraph */
+    color: #031021;
+    font-weight: 500;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.square-block:hover {
+    transform: scale(0.9);
+}
+
+.square-block:hover img{
+    transform: scale(1.1); /* Make the image bigger and center it on hover */
+    transition: transform 0.3s ease; 
+}
+
+.hologram:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s ease-out;
+}
+
+
+.square-block::before,
+.square-block::after,
+.square-block div::before,
+.square-block div::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #71F0DA;
+}
+
+/* Top-left L */
+.square-block::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Top-right L */
+.square-block::after {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+
+/* Bottom-left L */
+.square-block div::before {
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+}
+
+/* Bottom-right L */
+.square-block div::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+
+/* ------------------------------------------ */
+/* ------------------------------------------ */
+/* ------------------------------------------ */
 
 #card-content,  
 .secondary-card-content {
     width: 75vw; 
+    margin-bottom: 0.7rem;
 }
 
 .secondary-card {
@@ -455,7 +761,8 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 
 .card-margin {
     gap: 1rem; 
-    margin-bottom: 3.0rem;
+    margin-bottom: 1.6rem;
+    margin-right: 1.6rem;;
 }
 
 .secondary-card-content {
@@ -761,12 +1068,12 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     margin-bottom: 1rem;
 }
 
-#about-layout h2 {
-    font-size: 2rem;
-    color: var(--primary-color3);
+#introPara h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color2);
 }
 
-#about-layout h1 {
+#introPara h1 {
     margin-bottom: 2rem;
 }
 
@@ -1045,6 +1352,10 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     text-align: center;
 }
 
+#projects {
+    scroll-margin-top: 50px; /* Adjust based on your navbar height */
+}
+
 .prototype-link {
     position: relative;
     margin-top: 1rem;
@@ -1060,15 +1371,13 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     display: block;
     margin: 1rem;
     font-size: 2rem;
-    font-weight: bold;
-    background: rgb(40, 25, 66);
-    color: white;
-    border-radius: 10px;
+    background: #71F0DA;
+    color: #052042;
 }
 
 .prototype-link h3:hover {
-    background: var(--secondary-color3);
-    color: var(--primary-color3);
+    background: #71F0DA;
+    color: #052042;
 }
 
 /*Carousel*/
@@ -1137,7 +1446,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 }
  
 .active, .dot:hover {
-  background-color: var(--secondary-color2);
+  background-color: rgb(228, 188, 10);
 }
 
 /* Fading animation */
@@ -1168,7 +1477,7 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
     content: "";
     width: 75px;
     height: 75px;
-    background: rgb(70, 42, 119);
+    background: #71F0DA;;
     animation: loader 1s infinite;
     animation-direction: alternate;
 }
@@ -1246,8 +1555,8 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 }
 
 .hero-icon1 img, .hero-icon2 img, .hero-icon3 img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .h-i-common {
@@ -1258,15 +1567,15 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 }
 
 .hero-icon1 {
-    top: 2.4rem;
+    top: 2.0rem;
 }
 
 .hero-icon2 {
-    top: 12.4rem;
+    top: 12.2rem;
 }
 
 .hero-icon3 {
-    top: 7.4rem;
+    top: 7.1rem;
 }
 
 .grid-container {

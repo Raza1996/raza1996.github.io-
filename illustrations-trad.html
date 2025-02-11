@@ -9,7 +9,7 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grids.css" rel="stylesheet">
   <script src="js/clicktocopy.js" defer></script>
-  <script src="js/carousel.js" defer></script>
+  <script src="js/carousel.js" defer></script> 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
@@ -17,6 +17,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Smooch+Sans:wght@100..900&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
 </head>
  
 <body> 
@@ -32,33 +35,15 @@
         <ul>
           <li class="swap1"><a href="#projects">Projects</a></li>
           <li class="swap2"><a href="index.html">Projects</a></li>
-          <li class="swap1"><a href="#about-teleport">About</a></li>
+          <li class="swap1"><a href="#about-teleport" id="index-about">About</a></li>
           <li class="swap2"><a href="about-me.html">About</a></li>
-          <li><a href="src/Resume.pdf" target="_blank" style="color: rgb(255, 219, 57);">Resume</a></li>
+          <li><a href="src/Resume.pdf" target="_blank" style="color: #71F0DA;">Resume</a></li>
         </ul>
       </div>
-      <img onclick="switchMode()" src="src/sun.png" width="20" height="20" alt="dark mode icon" class="mobile" id="darkmode">
     </nav>
 
     <div id="contact-icons">
 
-      <div id = "day-contact-icon">
-        <div class="hero-icon2 h-i-common">
-          <a target="_blank" href="https://www.instagram.com/trace.raza">
-            <img src="src/Day-Insta-Icon.png" width="200" height="200" alt="instagram icon">
-          </a>
-        </div>
-        <a target="_blank" href="https://www.linkedin.com/in/goraza/">
-          <div class="hero-icon3 h-i-common">  
-              <img src="src/Day-Linkedin-Icon.png" width="200" height="200" alt="linkedin icon">
-          </div>
-        </a>
-        <div class="hero-icon1 h-i-common">
-          <a class="sweetalert2" onclick="copy(this)">
-            <img src="src/Day-Mail-Icon.png" width="200" height="200" alt="mail icon">
-          </a>
-        </div>
-      </div>
 
       <div id = "dark-contact-icon">
         <div class="hero-icon2 h-i-common">
@@ -72,7 +57,7 @@
           </div>
         </a>
         <div class="hero-icon1 h-i-common">
-          <a class="sweetalert2" onclick="copy(this)">
+          <a href="mailto:contact@goraza.ca" class="sweetalert2" onclick="copy(this)">
             <img src="src/Dark-Mail-Icon.png" width="200" height="200" alt="mail icon">
           </a>
         </div>
@@ -564,25 +549,13 @@
             <h4>Contact</h4>
             <div id="dark-contact-footer">
               <img class="icon sweetalert2" src="src/Dark-Mail-Icon.png" onclick="copy(this)" width="20" height="20" alt="mail icon">
-              <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
+              <a href="mailto:contact@goraza.ca" class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
               <a  href="https://www.instagram.com/trace.raza/">
                 <img class="icon"  src="src/Dark-Insta-Icon.png" width="20" height="20" alt="intstagram icon">
               </a>
               <a href="https://www.instagram.com/trace.raza/">trace.raza</a><br>
               <a  href="https://www.linkedin.com/in/goraza/">
                 <img class="icon" src="src/Dark-Linkedin-Icon.png" width="20" height="20" alt="linkedin icon">
-              </a>
-              <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
-            </div>
-            <div id="day-contact-footer" class="hidden">
-              <img class="icon sweetalert2" src="src/Day-Mail-Icon.png" onclick="copy(this)" width="20" height="20" alt="mail icon">
-              <a class="sweetalert2" onclick="copy(this)">contact@goraza.ca</a><br>
-              <a  href="https://www.instagram.com/trace.raza/">
-                <img class="icon" src="src/Day-Insta-Icon.png" width="20" height="20" alt="intstagram icon">
-              </a>
-              <a href="https://www.instagram.com/trace.raza/">trace.raza</a><br>
-              <a  href="https://www.linkedin.com/in/goraza/">
-                <img class="icon" src="src/Day-Linkedin-Icon.png" width="20" height="20" alt="linkedin icon">
               </a>
               <a href="https://www.linkedin.com/in/goraza/">@shabih-ul-hassanraza</a>
             </div>
@@ -608,6 +581,7 @@
       <script src="js/darkModeIconSwitch.js"></script>
       <script src="js/carousel.js"></script>
       <script src="js/hitherTither.js"></script>
+      <script src="js/about-teleport.js"></script>
       <script src="js/loader.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@figmania/svg-animate/lib/index.min.js"></script>
       </body>
