@@ -93,7 +93,7 @@
 }
 
 #hero:hover #b2 {
-    animation: rotateClockwise s linear infinite; /* Rotate counter-clockwise on hover */
+    animation: rotateClockwise 2s linear infinite; /* Rotate counter-clockwise on hover */
 }
 
 #hero:hover #b3{
@@ -293,7 +293,6 @@ h1 {
     padding-top: 2rem;
     letter-spacing: 1px;        
     font-family: "Saira Condensed", serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-size: 10rem;
@@ -301,7 +300,6 @@ h1 {
 
 h2 {
     font-family: "Saira Condensed", serif;
-    font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
     color: var(--primary-color2);
@@ -355,7 +353,6 @@ button {
     transition: 0.3s;
     border-radius: 30px;
     padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
