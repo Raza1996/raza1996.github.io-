@@ -88,33 +88,29 @@
     }
 }
 
-#hero:hover #b1 {
+#hero:hover #halo {
     animation: rotateCounterClockwise 2s linear infinite; /* Rotate counter-clockwise on hover */
 }
 
-#hero:hover #b2 {
+#hero:hover #halo2 {
     animation: rotateClockwise 2s linear infinite; /* Rotate counter-clockwise on hover */
-}
-
-#hero:hover #b3{
-    animation: rotateCounterClockwise 2s linear infinite;
 }
 
 @keyframes moveDown {
     from {
-        transform: translateY(-100px);
+        transform: translateY(0px);
     }
     to {
-        transform: translateY(0px); /* Adjust the value as needed */
+        transform: translateY(50px); /* Adjust the value as needed */
     }
 }
 
 @keyframes moveUp {
     from {
-        transform: translateY(0);
+        transform: translateY(50px);
     }
     to {
-        transform: translateY(-100px); /* Adjust the value as needed */
+        transform: translateY(0px); /* Adjust the value as needed */
     }
 }
 
@@ -123,16 +119,16 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(50px); /* Adjust the value as needed */
+        transform: translateX(-50px); /* Adjust the value as needed */
     }
 }
 
 @keyframes moveLeft {
     from {
-        transform: translateX(0);
+        transform: translateX(-50px);
     }
     to {
-        transform: translateX(-50px); /* Adjust the value as needed */
+        transform: translateX0(); /* Adjust the value as needed */
     }
 }
 
@@ -156,75 +152,82 @@
 }
 
 #hero:hover #s1{
-    animation: moveDown 2s ease-in-out 1 forwards;
-}
-
-#hero:hover #s2{
-    animation: hMoveRight 2s ease-in-out 1 forwards;
-}
-
-#hero:hover #s3{
     animation: moveUp 2s ease-in-out 1 forwards;
 }
 
+#hero:hover #s2{
+    animation: moveLeft 2s ease-in-out 1 forwards;
+}
+
+#hero:hover #s3{
+    animation: moveDown 2s ease-in-out 1 forwards;
+}
+
+
+#hero:hover #s4 {
+    animation:  moveRight 2s ease-in-out 1 forwards;
+} 
+
 #s1 { 
+    opacity: ;
     position: absolute;
-    top: 20%;    /* Move down 10% from its parent div */
-    left: 83%;
-    width: 10%;
+    bottom: 20%;    /* Move down 10% from its parent div */
+    right: 7%;
+    width: 20%;
     height: auto;
-    animation: moveUp 2s ease-in-out 1 forwards; /* Move up animation, play once */
+    animation: moveDown 2s ease-in-out 1 forwards; /* Move up animation, play once */
 }
 
 #s2 { 
     position: absolute;
-    top: 60%;    /* Move down 10% from its parent div */
-    left: 60.5%;
-    width: 25%;
+    top: 38%;    /* Move down 10% from its parent div */
+    left: 6%;
+    width: 8%;
     height: auto;
     animation: moveRight 2s ease-in-out 1 forwards; 
 }
 
 #s3 { 
     position: absolute;
-    top: 20%;    /* Move down 10% from its parent div */
-    left: 0%;
-    width: 20%;
+    top: 0%;    /* Move down 10% from its parent div */
+    left: -2%;
+    width: 35%;
     height: auto;
-    animation:  moveDown 2s ease-in-out 1 forwards;
+    animation:  moveUp 2s ease-in-out 1 forwards;
 }
 
-#b1 {
+#s4 {
+    opacity: 0.8;
     position: absolute;
     top: 4%;    /* Move down 10% from its parent div */
-    left: 38.3%;
-    width: 17%;
+    right: 10%;
+    width: 25%;
+    height: auto;
+    animation:  moveLeft 2s ease-in-out 1 forwards;
+} 
+
+#halo {
+    opacity: 0.5;
+    position: absolute;
+    top: -1.5%;    /* Move down 10% from its parent div */
+    left: 28%;
+    width: 30%;
     height: auto;
     border: none;
     z-index: -1;
-    animation: rotateClockwise 2s linear infinite; /* Rotate clockwise */
+    animation: rotateClockwise 5s linear infinite; /* Rotate clockwise */
 }
 
-#b2 {
+#halo2 {
+    opacity: 0.2;
     position: absolute;
-    top: 5.5%;    /* Move down 10% from its parent div */
-    left: 39.1%;
-    width: 15%;
+    top: -5%;    /* Move down 10% from its parent div */
+    left: 26%;
+    width: 35%;
     height: auto;
     border: none;
     z-index: -1;
     animation: rotateCounterClockwise 5s linear infinite; /* Rotate clockwise */
-}
-
-#b3 {
-    position: absolute;
-    top: 0.7%;    /* Move down 10% from its parent div */
-    left: 35.6%;
-    width: 22%;
-    height: auto;
-    border: none;
-    z-index: -1;
-    animation: rotateClockwise 10s linear infinite; /* Rotate clockwise */
 }
 
 #hero {
@@ -1564,15 +1567,15 @@ https://www.w3schools.com/howto/howto_css_cards.asp*/
 }
 
 .hero-icon1 {
-    top: 2.0rem;
+    top: 3.0rem;
 }
 
 .hero-icon2 {
-    top: 12.2rem;
+    top: 13.2rem;
 }
 
 .hero-icon3 {
-    top: 7.1rem;
+    top: 8.1rem;
 }
 
 .grid-container {
